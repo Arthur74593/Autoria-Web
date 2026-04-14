@@ -2,13 +2,36 @@ body{/* seletor = o nome da "marcação" que se formatar
     Não se deve colocar os sniais de maior e menor <> na marcação
     É obrigatório colocar as chaves {}*/
     background-color: cadetblue;
+    background-color: aliceblue;
+    background-color: rgb(170, 195, 211);
     /*  Esse atributo representa plano de fundo 
         Deve sempre receber uma cor como valor.
     */
+font-family: Arial, Helvetica, sans-serif;
+/* Familia é porque eu seleciono um estilo:
+    -serifado
+    -sem serifa
+    -caligrafia
+    -decorativa */
+color: rgb(0, 10, 63);
+font-size: 2rem;
+/* para colocar o tamannho da fonte é nescessário colocar
+um número e uma unidade : px, rm, em ,%, cm...*/
+}
+h1{
+    text-align: center;
+}
+h2{
+    background-color: rgb(80, 114, 114);
+    color:rgb(0, 10, 63)
+}
+li{
     
-    
-
-
-
+    /* atributo que formata apenas as listas */
+    /* list style type: altera os marcadores */
+    list-style-type: square;
+    background-color: rgb(24, 179, 179);
+    list-style-position: inside;
+    li
 
 }
