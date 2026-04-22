@@ -1,6 +1,16 @@
 body{
-    background-color: rgb(129, 37, 0) ;
+    background-color: rgb(236, 216, 101) ;
     font-family: Georgia, 'Times New Roman', Times, serif;
-    color: rgb(247, 206, 160);
-    font-size: 2r;
+    color: rgb(70, 37, 0);
+    font-size: 2rem;
+}
+h1{
+    background-color: rgba(148, 97, 1, 0.993);
+    text-align: center;
+}
+h2{
+    background-color: rgb(207, 201, 111);
+    text-decoration: dashed;
+    text-box: initial;
+    text-box-edge: initial;
 }
