@@ -1,0 +1,13 @@
+body{  /*Seletor*/
+    background-color: rgb(18, 58, 0);
+    color: rgb(249, 250, 255);
+    font-family: 'Times New Roman', Times, serif;
+
+}
+h1{
+    text-align: center;
+    
+}
+li{
+    list-style-image: url(marcador2\ \(1\).png);
+}
