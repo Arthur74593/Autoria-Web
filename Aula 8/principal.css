@@ -1,0 +1,35 @@
+body{
+    background-image: url(imagens/bg-tile.png);
+    /* sempre será decorativa */
+    /* para imagens informacionais é necessário usar a marcação de IMG */
+    background-image: url(imagens/bg-marca.png);
+    background-repeat: repeat-y;
+    background-position: right;
+    /* Background-image pode ser colocado em qualquer marcação */
+    margin:0;
+    /* margin é o espaçamento externo */
+}
+
+h1{
+    margin:0;
+    background-image: url(imagens/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;  
+    text-align: center;
+    padding: 5rem; 
+    /* espaçamento interno */
+}
+h1 a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
+a:hover{        /*SUBCLASSE DO CSS - EFEITO DE "PASSAR O MOUSE"*/
+    background-color: rgb(98, 122, 122);
+
+}
+/* a:link
+a:active
+a:visited */
