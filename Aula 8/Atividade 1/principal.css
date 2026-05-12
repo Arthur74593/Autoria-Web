@@ -1,0 +1,13 @@
+body{
+    background-image: url(imagens_dev/background.jpg);
+    
+}
+h1{
+    background-image: url(imagens_dev/);
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 5rem;
+
+
+}
