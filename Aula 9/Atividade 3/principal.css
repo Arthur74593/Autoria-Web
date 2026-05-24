@@ -1,0 +1,144 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    text-align: center;
+    background-color: #f2f2f2;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabeçalho {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.logo img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+.menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin: 10px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.menu a:hover {
+    color: yellow;
+}
+
+
+.banner1 {
+    background-image: url("https://plus.unsplash.com/premium_photo-1669021454455-511572c0f314?fm=jpg&q=60&w=3000&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-size: cover;
+    background-position: center;
+
+    padding: 80px 20px;
+    color: white;
+}
+
+.banner2 {
+    background-image: url("https://static.vecteezy.com/ti/fotos-gratis/t2/71528349-haltere-prateleira-dentro-uma-academia-peso-treinamento-equipamento-gratis-foto.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 80px 20px;
+    color: white;
+
+}
+.banner3{
+    background-image: url("https://img.magnific.com/fotos-gratis/full-shot-pessoas-treinando-na-academia_23-2149049754.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 80px 20px;
+    color: white;
+}
+
+
+.banner h2, .banner h3 {
+    background-color: rgba(0,0,0,0.5);
+    display: inline-block;
+    padding: 5px;
+}
+
+
+.sobre {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+
+    background-image: url("imagens/foto.jpg");
+    background-size: cover;
+    background-position: center;
+
+    padding: 40px;
+    color: rgb(0, 0, 0);
+}
+
+
+.sobre img {
+    width: 100px;
+}
+
+
+.sobre div {
+    max-width: 400px;
+}
+
+
+.treinos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px;
+}
+
+.item {
+    border: 2px solid black;
+    padding: 20px;
+    width: 200px;
+    background-color: white;
+}
+
+.item img {
+    width: 80px;
+}
+
+.contato {
+    margin: 40px;
+}
+
+.rodape {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin-top: auto;
+    border-top: 2px solid white;
+}

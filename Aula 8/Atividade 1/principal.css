@@ -8,7 +8,7 @@ h1{
     background-size: cover;
     background-repeat: no-repeat;
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: aliceblue;
     margin: 0;
@@ -27,9 +27,37 @@ img{
 hr{
     border: 0.5px solid rgb(0, 41, 94); 
 }
-h4{
-    margin-left: 10px;
-}
+
 h2{
     margin-left: 10px;
 }
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* centraliza vertical */
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  height: 60px; /* altura da barra */
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: rgb(0, 41, 94);
+  padding: 15px;
+   display: flex;
+  justify-content: flex-end;
+  padding-right: 30px;
+}
+
+li a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+li a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
