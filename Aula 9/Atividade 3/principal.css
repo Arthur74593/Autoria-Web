@@ -49,7 +49,7 @@ body {
 
 
 .menu a:hover {
-    color: yellow;
+    color: rgb(35, 156, 255);
 }
 
 
@@ -93,9 +93,11 @@ body {
     justify-content: center;
     align-items: center;
     gap: 20px;
+    border: 2px solid white;
 
-    background-image: url("imagens/foto.jpg");
-    background-size: cover;
+    background-image: url("https://img.magnific.com/vetores-gratis/fundo-azul-sem-tons-em-branco_53876-114466.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: auto;
+    background-repeat: no-repeat;
     background-position: center;
 
     padding: 40px;
@@ -105,6 +107,8 @@ body {
 
 .sobre img {
     width: 100px;
+    border: 10px;
+    border-color: white;
 }
 
 
