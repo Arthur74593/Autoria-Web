@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BRASIL X HAITI</title>
+    <link rel="stylesheet" href="principal.css">
+</head>
+<body>
+    <!-- 
+    MARCAÇÃO DE HEADER: valor semantico de cabecalho
+    -->
+    <header>
+        <h1><a href="">BRASIL X HAITI</a></h1>
+        <nav>
+            <ol>
+                <li><a href="">Horário</a></li>
+                <li><a href="">Local</a></li>
+                <li><a href="">Escalação</a></li>
+                <li><a href="">Regras</a></li>
+                <li><a href="">Organizadores</a></li>
+            </ol>
+        </nav>
+    </header>
+    <main>
+        <section id="localhorario">
+            <h2>Local e horário</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsum odit magnam mollitia magni ea! Labore itaque architecto esse, repellendus maxime delectus libero ipsum modi animi mollitia ipsa culpa iusto.</p>
+        </section>
+        <section>
+            <h2>Regras</h2>
+            <ul>
+                <li>Não pode trazer garrafas de vidro</li>
+                <li>Não pode trazer caixas de som</li>
+                <li>Só é permitido alunos do IFRN CNAT</li>
+                <li>Proibida a entrada de animais</li>
+                <li>Proibido trazer bebidas alcóolicas</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Organizadores</h2>
+            <!-- 
+            MARCAÇÃO DE DIV:
+                - marcação antiga
+                - marcação que NÃO TEM valor semantico
+                - objetivo de DIVidir o código
+            
+            ATRIBUTO CLASS:
+                - define uma classificação da marcação
+                - qualquer marcação pode ter class
+                - usada para personalizar aquela marcação
+                - pode ter evários valores, esses serão separados por espaço " "
+                ex: class = "atual destaque centralizado"
+                - no CSS é acessado usando "."
+                - boas práticas de desenvolvimento: 
+                    - usar apenas o necessário
+                    - delimitar um termo coerente 
+
+            ATRIBUTO ID:
+                - define um IDentificador para a marcação
+                - qualquer marcação pode ter
+                - no CSS é acessado por meio do "#"
+                - é possível colocar em uma mesma marcação id e class
+                - regras:
+                    - o valor é único para o arquivo, isto é, se foi usado id=principal em alguma marcação, no respectivo arquivo não pode 
+                    ter outra marcação com o mesmo valor  (pode ter com outro valor, ou seja, várias marcações podem ter o atributo id definido)
+                    - delimitar um termo coerente
+                    - não pode ter espaço
+                    - não pode começar com número
+            -->
+          
+
+            <div class="destaque">
+                Amanda: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet accusamus neque dolorem voluptates fugiat a, non totam? Earum beatae quos accusantium saepe, minima pariatur sequi culpa tenetur dolor perferendis porro.
+            </div>
+            <div class="destaque">
+                Luís: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet accusamus neque dolorem voluptates fugiat a, non totam? Earum beatae quos accusantium saepe, minima pariatur sequi culpa tenetur dolor perferendis porro.
+            </div>
+            <div class="destaque">
+                Laura: Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet accusamus neque dolorem voluptates fugiat a, non totam? Earum beatae quos accusantium saepe, minima pariatur sequi culpa tenetur dolor perferendis porro.
+            </div>
+        </section>
+
+
+    </main>
+    <footer>
+        <p>© 2026 IFRN- Todos os direitos reservados</p>
+    </footer>
+    
+</body>
+</html>
