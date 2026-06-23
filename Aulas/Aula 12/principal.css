@@ -1,0 +1,25 @@
+body{
+    color:rgb(255, 195, 121);
+    background-color: rgb(0, 11, 58);
+}
+/* Posso selecionar varios seletores com a virgula */
+h1 a, li a{
+    color:rgb(255, 195, 121);
+}
+nav li{
+    display: inline-block;
+}
+nav ol{
+    text-align: center;
+    padding: 0; 
+    /* Por padrão, a lista tende a ficar com um espaçamento à esquerda,
+    para ela ficar no centro, é necessário "zerar" o padding, removendo esse espaço */
+}
+main{
+    max-width: 1000rem;
+    margin: 0 auto;
+    background-color: rgb(0, 13, 131);
+    padding:2rem;
+    border: 10px solid rgb(255, 222, 173);
+    border-radius: 1rem;
+}
