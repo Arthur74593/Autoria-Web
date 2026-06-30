@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DISPLAYFELX 1</title>
+    <style>
+        div#container{
+            border: 2px solid rgb(22, 161, 22);
+            max-width: 70rem;
+            margin: 0 auto;
+            display: flex ;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+        }
+        div div{
+            border:1px solid black;
+            width: 5rem ;
+            margin: 2rem ;
+            padding: 2rem ;
+            text-align: center;
+        }
+        div.a{order: 3;}
+        div.b{order: 2;}
+        div.c{order: 1;}
+        div.d{order: 5;}
+        div.e{order: 4;}
+        div.f{order: 6;}
+        /*
+        - O atributo de "order" altera a ordem das marcações que estão no display-flex
+        - Uma regra: É necessário definir o atributo em todas as marcações!
+        */
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="a"><p>1</p></div>
+        <div class="b"><p>2</p></div>
+        <div class="c"><p>3</p></div>
+        <div class="d"><p>4</p></div>
+        <div class="e"><p>5</p></div>
+        <div class="f"><p>6</p></div>
+    </div>
+    
+</body>
+</html>
