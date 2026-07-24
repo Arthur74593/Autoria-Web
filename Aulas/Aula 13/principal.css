@@ -1,0 +1,138 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+}
+
+header{
+    background-image: url(Imagens/backgrounds/bg.png);
+    background-repeat: repeat;
+    background-size: cover;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+header a{
+    color:white;
+    text-decoration:none;
+}
+nav ol{
+    background-color: rgba(0, 0, 0, 0.288);
+    text-align: center;
+    color: white;
+}
+nav li{
+    display: inline-flex;
+    padding: 0.3cm;
+}
+nav a{
+    color: white;
+    text-decoration: none;
+}
+
+.funcoes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    
+}
+.texto{
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 20rem;
+    margin-right: 20rem;
+}
+h3{
+    text-align: center;
+}
+.funcoes > div{
+    background-image: url(Imagens/backgrounds/bg-boxes.jpg);
+    width: 250px;
+    margin: 2rem;
+    border-radius: 10px;
+    color: white;
+    text-align: center;  
+    
+}
+.materias{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+    margin-bottom: 10rem;
+}
+.materias > div{
+    background-image: url(Imagens/backgrounds/backdev.jpeg);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+}
+.materias img{
+    width: 150px;
+}
+.materias p,.materias h3{
+    text-align: left;
+}
+.teachers{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 2rem;
+    margin-bottom: 10rem;
+}
+.teachers > div{
+    background-image: url(Imagens/backgrounds/fundo-de-textura-de-tons-de-cor-de-pele-humana-em-estilo-ondulado_1017-61667.avif);    
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+
+}
+.professores{ /*Fotos dos professores*/
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+.agenda{
+    width: 95%;
+    max-width: 1600px;
+    margin: 40px auto;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.agenda th, .agenda td{
+    border: 1px solid #ccc;
+    padding: 29px;
+    text-align: center;
+    font-size: 29px;
+}
+
+
+footer{
+    background-image: url(Imagens/backgrounds/bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: end;
+    padding: 1px;
+    margin: 0;  
+    margin-top: auto;
+}
