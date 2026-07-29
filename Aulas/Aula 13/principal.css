@@ -125,7 +125,22 @@ h3{
     text-align: center;
     font-size: 29px;
 }
+.material{
+    background-image: url(Imagens/backgrounds/fundo-de-textura-de-tons-de-cor-de-pele-humana-em-estilo-ondulado_1017-61667.avif);    
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+    margin-left: 10rem;
+    margin-right: 10rem;
+    color: rgb(255, 255, 255);
+    display: flex;
+    padding: 2rem;
 
+}
+.material > img{
+    align-items: center;
+}
 
 footer{
     background-image: url(Imagens/backgrounds/bg.png);
@@ -133,6 +148,6 @@ footer{
     background-size: cover;
     text-align: end;
     padding: 1px;
-    margin: 0;  
+    margin: 0;
     margin-top: auto;
 }
