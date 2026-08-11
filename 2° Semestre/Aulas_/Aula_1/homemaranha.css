@@ -1,0 +1,26 @@
+table{
+    background-color: aqua;
+    border-collapse: collapse;
+    
+}
+table tr:nth-child(odd){
+    /* 
+    odd: ímpar
+    even: par
+     */
+    /* subcclasse css para selecionar os filhos impares */
+    background-color: antiquewhite;
+}
+table tr:first-child{
+    background-color: black;
+    color: white;
+}
+table tr:nth-child(3){
+    font-weight: bold;
+}
+table tr, table td{
+    text-align: center;
+}
+table tr, table th{
+    text-align: center;
+}
