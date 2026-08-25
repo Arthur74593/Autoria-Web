@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div,p,section,a,span,b,mark{
+            background-color: cadetblue;
+            padding: 5rem;
+            border: 1px solid black;
+            width: 70rem;
+            height: 10rem;
+            /* Os atributos de padding, height e width não funcionam corretamente nas marcações INLINE */
+        }
+        a,span,b,mark{
+            display: block;
+            /* Ao aplicar um 'display block' em uma marcação inline,
+            ela se comportará como uma marcação block, 
+            logo os atributos de padding, height, width */
+        }
+    </style>
+</head>
+<body>
+    <!-- A ORGAZINAÇÃO DAS MARCAÇÕES NÃO SEGUEM SEMÂNTICA -->
+    <div>MARCAÇÃO DE DIV</div>
+    <mark>INLINE - MARCAÇÃO MARK</mark>
+    <p>MARCAÇÃO DE PARÁGRAFO</p>
+    <section>MARCAÇÃO DE SECTION</section>
+    <a href="ancora.html">MARCAÇÃO DE ÂNCORA</a>
+    <span>MARCAÇÃO DE SPAN</span>
+    <b>MARCAÇÃO DE BOLD (NEGRITO)</b>
+
+<!-- span - marcação se mvalor semântico do tipo inline -->
+<!-- pode-se colocar uma marcação inline dentro de uma marcação block,
+ mas o contrário não é indicado, por exemplo:
+ <a><p>texto</p></a> -->
+
+    <div>
+        <span>texto</span>
+    </div>
+</body>
+</html>
