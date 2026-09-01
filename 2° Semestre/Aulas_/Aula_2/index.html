@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOX-SIZING</title>
+    <style>
+        div{
+            background-color:rgb(111, 180, 156);
+            width: 20rem;
+            height: 40rem;
+            margin: 5rem auto;
+            border: 2px dashed rgb(92, 109, 103);
+            padding: 5rem;
+            box-sizing: border-box; 
+            /*
+            Quando se aplica o box-sizing, o atributo padding diminui a área interna do conteúdo
+            dentro da marcação , a largura continua a mesma, mas a área interna fica "menor"
+            */
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere ratione eum dolorem architecto tenetur itaque, cumque optio magnam excepturi sunt tempora suscipit sapiente maxime harum et quibusdam porro sit aliquid!</p>
+    </div>
+</body>
+</html>
