@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    <h1>Cadastro</h1>
+    <form action="">
+        <fieldset>
+            <legend>Temas de interesse</legend>
+            <!-- 
+            Marcações de fildset e legend são opcionais e serve para organização do formulário
+            -->
+
+        <label>
+            <input type="checkbox" name="interesse" id="design" value="design">
+            Desing
+        </label><br>
+        <!-- 
+        Mesmo parecendo com o "radio" no quesito sintaxe, o checkbox permite a seleção de vários itens
+        características:
+        - É necessário definir o nome eo id, assim como no "radio"
+        -->
+        <label>
+            <input type="checkbox" name="interesse" id="negocios" value="negocios">
+            Negócios
+        </label><br>
+        <label>
+            <input type="checkbox" name="interesse" id="desenvolvimento" value="desenvolvimento">
+            Desenvolvimento
+        </label><br>
+        </fieldset> <br>
+        <fieldset>
+            <legend>Dados profissionais</legend>
+
+            <label for="arquivar">Currículo:</label>
+            <input type="file" id="arquivar">
+
+            <label for="conclusao">Ano de conclusão do E.M:</label>
+            <input type="date" id="conclusao">
+            
+        </fieldset>
+        <fieldset>
+            <legend>Endereço</legend>
+            <label for="cidade">Cidade:</label>
+            <input type="text" id="cidade" list="listacidade">
+
+            <datalist id="listacidade">
+                <option value="Natal"></option>
+                <option value="Recife"></option>
+                <option value="João Pessoa"></option>
+            </datalist>
+            <!-- 
+            O datalist é similar ao select, porém é mais "flexpivel" podendo digitar ou escolher uma opção pré-definida
+            - Atributo text
+            - Atribuir o id do label
+            -->
+        </fieldset>
+        <input type="submit" value="ENVIAR">
+    </form>
+</body>
+</html>

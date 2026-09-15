@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formulário de contrato</title>
+    <style>
+        form{
+            border: 1px solid black;
+            margin: 2rem auto;
+            padding: 2rem;
+            width: 20rem;
+        }
+        label[for]{
+            display: inline-block;
+            width: 7rem;
+            margin-bottom: 0.7rem;
+            vertical-align: top;    
+        }
+    </style>
+</head>
+<body>
+    
+    <form action="resultado.html">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" required placeholder="Digite o seu nome" value="Arthur"> <br>
+        <!-- id no input: Serve para relacionar a informação com o backend -->
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" required placeholder="Ex: fulano@gmail.com"> <br>
+        <!-- placeholder: Dá um exemplo, normalmente, de como a área deve ser preenchida -->
+
+        <label for="motivo">Motivo: </label>
+        <select id="motivo">
+            <option value="elogio">Elogio</option>
+            <option value="duvida">Dúvida</option>
+            <option value="reclamacao">Reclamação</option>
+            <option value="nda">Prefiro não dizer</option>
+        </select> <br>
+        <!-- select é um componente chamado COMBOBOX
+         é usado para uma lista de muitos itens similares, ex: lista de ceps, meses, anos, dias e etc
+         não é indicado para listas curtas com poucos itens e muito diferentes, ex: status, profissão... -->
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem"></textarea> <br>
+        <!-- textarea: Permite a inserção de textos mais longos -->
+
+        
+
+        <input type="submit" value="ENVIAR">
+
+    </form>
+
+    <form action="">
+        <label for="busca">Palavra(s)-chave:</label>
+        <input type="search" id="busca">
+        <input type="submit" value="PESQUISAR">
+
+    </form>
+    <form action="">
+        <p>Qual sua disciplina favorita?</p>
+        <label><input type="radio" name="disc" value="autoria">Autoria Web</label><br>
+        <label><input type="radio" name="disc" value="prog">Programação</label><br>
+        <label><input type="radio" name="disc" value="mat">Matemática</label><br>
+        <label><input type="radio" name="disc" value="geo">Geografia</label><br>
+        <!-- o componente "radio" só permite a seleção de uma opção -->
+        <!-- name: recebe qual é o grupo daquele valor
+            value: recebe qual é o valor digitado ou selecionado pelo usuário  -->
+        <br>
+        <input type="submit">
+    </form>
+</body>
+</html>
