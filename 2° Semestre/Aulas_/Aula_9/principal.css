@@ -1,0 +1,55 @@
+nav > ol{
+    /* O sinal de > é usado para selecionar apenas o marcador que é filho direto do marcador anterior. */
+    display: flex;
+}
+ol > li{
+    list-style-type: none;
+    position: relative;
+    padding: 2rem;
+    background-color: azure;
+}
+ol ul{
+    position: absolute;
+    background-color: cadetblue;
+    visibility: hidden;
+    padding: 2rem;
+    opacity: 0;
+    /* Atributo de opacidade define a transparência 0
+    esse atributo recebe de 0 a 1*/
+    height: 0;
+}
+ul li a{
+    color: whitesmoke;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+ol li:hover ul{
+    visibility: visible;
+    /* Hover é o efeito que é chamado ao passar o mouse.
+    Ao passar o mouse em cima do li, os efeitos acima aparecem */
+    z-index: 10; 
+    /* Para o submenu ficar em cima (sobreposto) */
+    transition: opacity 2s ease-out, height 2s, background-color 2s ;
+    /* O atributo de transition, no css, deifne uma transição, efeito, usando os próprios atributos css */
+    opacity: 1;
+    height: 5rem;
+    background-color: rgba(153, 234, 237,);
+}
+
+
+/* RESPONSIVIDADE */
+@media screen and (max-width: 1280px){
+    /* Quando a largura da tela for menor que 1280px, aplicar formatações abaixo */
+    body{
+        background-color: aquamarine;
+    }
+}
+
+@media screen and (max-width: 468px){
+    body{
+        background-color: rgb(230, 230, 33);
+    }
+}
+
