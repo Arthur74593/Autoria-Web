@@ -10,7 +10,7 @@
             padding: 0;
             box-sizing: border-box;
         }
- 
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             color: white;
@@ -19,10 +19,11 @@
             display: flex;
             flex-direction: column;
         }
- 
+
         a {
             text-decoration: none;
         }
+
         header {
             display: flex;
             flex-wrap: wrap;
@@ -32,26 +33,26 @@
             padding: 2.5rem 1.5rem;
             background-image: linear-gradient(to right, #A12FFD, #1DB5FD);
         }
- 
+
         h1 {
             font-size: 1.8rem;
         }
- 
+
         h1 a {
             color: white;
         }
- 
+
         h2 {
             font-size: 1.2rem;
             font-weight: normal;
         }
- 
+
         nav ul {
             display: flex;
             gap: 1rem;
             list-style: none;
         }
- 
+
         nav li a {
             display: block;
             width: 8rem;
@@ -60,10 +61,11 @@
             color: black;
             background-color: rgba(255, 255, 255, 0.24);
         }
- 
+
         nav li a:hover {
             background-color: rgba(255, 255, 255, 0.4);
         }
+
         main {
             flex: 1;
             display: flex;
@@ -72,21 +74,26 @@
             gap: 1rem;
             padding: 2rem;
         }
- 
+
         .jogos,
         .lateral {
             background-color: #0a1f44;
             border-radius: 1.2rem;
             padding: 2rem;
+            flex-shrink: 0; 
         }
+
+   
         .jogos {
             display: grid;
-            grid-template-columns: repeat(3, 1fr);
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            align-content: start; 
             gap: 2rem;
             width: 500px;
         }
- 
+
         .jogos > div {
+            width: 100%;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -94,17 +101,19 @@
             background-color: rgba(255, 255, 255, 0.24);
             font-size: 0.95rem;
         }
+
+
         .lateral {
             width: 200px;
             padding: 1.2rem;
         }
- 
+
         .lateral label {
             display: block;
             font-size: 0.8rem;
             margin-bottom: 0.4rem;
         }
- 
+
         .lateral input {
             width: 100%;
             height: 2rem;
@@ -113,15 +122,16 @@
             color: white;
             background-color: rgba(255, 255, 255, 0.24);
         }
- 
+
         .lateral figure {
             margin-top: 3.5rem;
         }
- 
+
         .lateral img {
             display: block;
             width: 100%;
         }
+
         footer {
             padding: 1rem;
             text-align: center;
@@ -135,7 +145,7 @@
             <h1><a href="index.html">JOGOS INTERNOS</a></h1>
             <h2>IFRN CNAT</h2>
         </div>
- 
+
         <nav>
             <ul>
                 <li><a href="atletas.html">Atletas</a></li>
@@ -145,7 +155,7 @@
             </ul>
         </nav>
     </header>
- 
+
     <main>
         <section class="jogos">
             <div>VÔLEI</div>
@@ -158,19 +168,19 @@
             <div>CORRIDA</div>
             <div>FUTSAL</div>
         </section>
- 
+
         <aside class="lateral">
             <form action="">
                 <label for="busca">Busca:</label>
                 <input type="search" id="busca">
             </form>
- 
+
             <figure>
                 <img src="Imagens/Cladendario.png" alt="Calendário de dezembro de 2025">
             </figure>
         </aside>
     </main>
- 
+
     <footer>
         <p>DESENVOLVIDO POR INFOWEB</p>
     </footer>
