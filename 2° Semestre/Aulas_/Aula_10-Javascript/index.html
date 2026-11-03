@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPT</title>
+</head>
+<body>
+    <h1>INTRODUÇÃO À LINGUAGEM JAVASCRIPT</h1>
+    <ul>
+        <li>Javascript é uma linguagem de programação FRONT-END e  BACK-EDND</li>
+        <li>JAVASCRPIT NÃO É JAVA</li>
+        <li>Diferencia minúsculas de maiúsculas</li>
+        <li>Não precisa colocar ";" no fim da linha</li>
+        <li>Tem como objetivo trazer INTERATIVIDADE!</li>
+    </ul>
+
+    <p id="texto"></p>
+
+    <script>
+        // alert(3+9);
+        // janela de alerta só para incial, não usar porque é chata!
+        window.confirm("Hoje tem aula de minora?");
+
+        // janela de alert() só mostra uma informação
+        // janela de confirm retorna true or false
+        // janela de prompt
+        // let nome = window.prompt("Digite seu nome:");
+        // document.write("<p>" + nome+ "<p>");
+
+        document.getElementById("texto").innerHTML = "OLÁ MUNDO";
+        console.log("OLÁ MUNDO")
+
+    </script>
+    <h2>Variáveis</h2>
+    <script>
+        let nome = "INFOWEB";
+        let num = 10;
+        let numdecimal = 3.5;
+        let booleano = true;
+        console.log(num+decimal);
+
+        num = "IFRN"; // JAVASCRIPT NÃO É "FORTEMENTE TIPADO", isto é, não é necessário
+        // Definir tipo da variável e a variável pode mudar de tipo depois
+        // Sem precisar de conversão (algumas linguagens de programação tem essa obrigação)
+
+    </script>
+    <h2>OPERADORES ARITIMÉTICOS</h2>
+    <script>
+        console.log(54+89) // console.log é mais profissional para 
+        // impressão de mensagens de erros, por exemplo...
+        conosole.log(59-9)
+        console.log(59*9)
+        console.log(59/9)
+        let a = 8;
+        console.log(a++) // Incremento
+        conosole.log(a)
+        conosole.log(--a) // Decremento
+    </script>
+    <form action="">
+        
+        <label>NUM1: <input type="num1"></label>
+        <label>NUM2: <input type="num2"></label>
+        <button id="soma">SOMAR</button>
+
+    </form>
+    <p id="resultado"></p>
+    <script>
+        const btnsomar = document.querySelector("#soma");
+        // getElementById pega o id e o querySelector seleciona
+        // qualquer um, inclusive com class
+        btnsomar.addEventListener("click", function(e){ // evento de click
+
+        })
+    </script>
+  
+</body>
+</html>
