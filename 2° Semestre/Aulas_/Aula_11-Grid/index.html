@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        body>div{
+            border: 1px solid black;
+            margin: 0 auto;
+            max-width: 70rem;
+            padding: 2rem;
+            gap: 2rem; /*Espaçamento entre os cards.É similar ao margin que é definido nos próprios cards. 
+            Logo, não usar margin nos cards */
+            grid-template-rows: 10rem 10rem 10rem; /*Cuidado ao usar, porque limita a área em altura, ou seja, caso o texto esteja muito alto,
+            vai  ultrapassar a área. Solução: Overflow */
+            grid-template-columns: 2fr 2fr 1fr ; /*Largura de cada coluna */ 
+           
+            /*Quantidade de valores é equivalente a quantidade de colunas organizadas no grid-template-areas */
+            /* Unidades:
+            - rem
+            - em
+            - fr: fracionado, 1fr, 2fr, 3fr, 4fr
+            - %
+             */
+            display: grid; /*Permite mesclar cards verticalmente */
+            grid-template-areas: 
+            "a b c"
+            "a b d"
+            "e e e"
+            
+            ;
+
+        }
+        div>div{
+            border: 1px solid gray;
+            margin: 1rem;
+            padding: 1rem;
+            overflow: auto;
+            /* width: 40%; */
+        }
+        .palestras{ grid-area: a;}
+        .palestrantes{ grid-area: b;}
+        .minicursos{ grid-area: c;}
+        .hackthon{ grid-area: d;}
+        .feira{ grid-area: e;}
+    </style>
+</head>
+<body>
+    <!-- Código apenas para entender o conceito -->
+    <div>
+        <div class="palestras">
+            <p>Lrem ipsum dolor sit amet, consectetur adipisicing elit. Nobis est aspernatur dolor iusto ducimus nihil unde dolorem eveniet harum fugiat animi, voluptates error quia dolores. Vel accusamus pariatur odit praesentium.</p>
+        </div>
+        <div class="palestrantes">
+            <p>orem ipsum dolor sit amet, consectetur adipisicing elit. Nobis est aspernatur dolor iusto ducimus nihil unde dolorem eveniet harum fugiat animi, voluptates error quia dolores. Vel accusamus pariatur odit praesentium.</p>
+        </div>
+        <div class="minicursos">
+            <p>Lorm ipsum dolor sit amet, consectetur adipisicing elit. Nobis est aspernatur dolor iusto ducimus nihil unde dolorem eveniet harum fugiat animi, voluptates error quia dolores. Vel accusamus pariatur odit praesentium.</p>
+        </div>
+        <div class="hackthon">
+            <p>Loem ipsum dolor sit amet, consectetur adipisicing elit. Nobis est aspernatur dolor iusto ducimus nihil unde dolorem eveniet harum fugiat animi, voluptates error quia dolores. Vel accusamus pariatur odit praesentium.</p>
+        </div>
+        <div class="feira">
+            <p>Lore ipsum dolor sit amet, consectetur adipisicing elit. Nobis est aspernatur dolor iusto ducimus nihil unde dolorem eveniet harum fugiat animi, voluptates error quia dolores. Vel accusamus pariatur odit praesentium.</p>
+        </div>
+
+    </div>
+</body>
+</html>
