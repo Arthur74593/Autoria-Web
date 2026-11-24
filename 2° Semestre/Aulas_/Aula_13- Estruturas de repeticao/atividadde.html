@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade</title>
+</head>
+<body>
+        <fieldset>
+            <legend>Senhas</legend>
+            <label>Senha: <input type="password"  id="senha1"></label><br>
+            <label>Confirme sua senha: <input type="password"  id="senha2"></label><br>
+            <button id="butao"><input type="submit" value="ENVIAR"></button>
+            
+        </fieldset>
+
+    <script>
+        
+        const butao = document.querySelector("#butao")
+        butao.addEventListener("click", function (e){
+            let senha1 = document.getElementById('senha1')
+            console.log(senha1)
+            let senha2 = document.getElementById('senha2')
+            console.log(senha2)
+
+
+            if (senha1== senha2){
+                console.log("Igual")
+            }
+            else{
+                console.log("Diferente")
+            }
+            
+        })
+    </script>
+
+</body>
+</html>

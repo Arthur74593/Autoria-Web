@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estruturas de repetição</title>
+</head>
+<body>
+    <script>
+        for(let i = 0; i < 10; i++){
+            console.log("FOR com incremento:" + i)
+        }
+        for(let j = 10; j > 0 ; j--){
+            console.log("FOR com decremento: "+j)
+        }
+        const frutas = ['banana', 'laranja', 'morango']
+        frutas.forEach( fruta => {
+        // Variável fruta é usada para controle do for.Each.
+        // Repreesenta cada item.
+
+        })
+        for (let w = 0 ; w < frutas.length  ; w++){
+            console.log("FOR com lista: " + frutas[w])
+        }
+        let d = 0;
+        while( d < 10){
+            console.log("WHILE:" + d);
+            d += 2;
+        }
+    </script>
+    <p id="resultado" style="font-size: 5rem;"></p>
+    <script>
+        let resultado = document.getElementById('resultado')
+        for(let r = 2; r < 7; r++){
+            resultado.innerHTML += 
+            `<span style= "font-size: ${r}rem">INFOWEB-</span>`
+            // "<p style=font-size:" + r +"rem>INFOWEB-</p>"
+            // É necessário colocar '+=' para mostrar várias vezes
+            // Marcação span não tem valor semântico e é inline
+        }
+    </script>
+</body>
+</html>
